@@ -23,7 +23,7 @@ public class CreatingNewSheet {
         return newList;
     }
 
-    private static int findMaxNumberOfRepetitions(List<Integer> list, int repetitionsOfAddedNumbers) {
+    private int findMaxNumberOfRepetitions(List<Integer> list, int repetitionsOfAddedNumbers) {
         int repetitionsOfNewNumber, maxOfRepetitions = 0;
 
         for (Integer number : list) {
@@ -37,7 +37,7 @@ public class CreatingNewSheet {
         return maxOfRepetitions;
     }
 
-    private static int findNumberOfRepetitions(List<Integer> list, int number) {
+    private int findNumberOfRepetitions(List<Integer> list, int number) {
         int repetitions = 0;
 
         for (Integer member : list) {
@@ -49,7 +49,7 @@ public class CreatingNewSheet {
         return repetitions;
     }
 
-    private static List<Integer> findNumbersWithMaxRepeatability(List<Integer> list, int maxOfRepetitions) {
+    private List<Integer> findNumbersWithMaxRepeatability(List<Integer> list, int maxOfRepetitions) {
         int repetitionsOfNewNumber;
         List<Integer> addedNumbers = new ArrayList<>();
 
@@ -64,7 +64,7 @@ public class CreatingNewSheet {
         return addedNumbers;
     }
 
-    private static void sortWithGivenRepetitions(List<Integer> list) {
+    private void sortWithGivenRepetitions(List<Integer> list) {
         int temp;
 
         for (int i = 0; i < list.size(); i++) {

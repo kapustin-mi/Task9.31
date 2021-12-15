@@ -3,7 +3,7 @@ package cs.vsu.ru.kapustin.windowProgram;
 import javax.swing.*;
 
 public class ErrorMessages {
-    public static void showErrorMessage(int errorCode) {
+    public void showErrorMessage(int errorCode) {
         String message;
         if (errorCode == 0) {
             message = "Unable to load data from this file.";
